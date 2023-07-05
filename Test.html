@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #181818; -webkit-text-stroke: #181818; background-color: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #181818; -webkit-text-stroke: #181818; background-color: #ffffff; min-height: 17.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>#spin-wheel {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>width: 300px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>height: 300px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>position: relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>border: 2px solid #000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>border-radius: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>animation: spin 5s infinite linear;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>@keyframes spin {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>0% { transform: rotate(0deg); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>100% { transform: rotate(360deg); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.slice {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>position: absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>height: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>clip-path: polygon(50% 50%, 0 0, 100% 0);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-size: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-weight: bold;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.slice:nth-child(1) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: #FF4136;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform: rotate(0deg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.slice:nth-child(2) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: #0074D9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform: rotate(45deg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.slice:nth-child(3) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: #2ECC40;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform: rotate(90deg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.slice:nth-child(4) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: #FFDC00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform: rotate(135deg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.slice:nth-child(5) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: #FF851B;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform: rotate(180deg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.slice:nth-child(6) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: #F012BE;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform: rotate(225deg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.slice:nth-child(7) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: #B10DC9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform: rotate(270deg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.slice:nth-child(8) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: #85144b;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform: rotate(315deg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>#arrow {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>position: absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>top: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>left: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform: translate(-50%, -50%) rotate(0deg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>width: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>height: 80px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: red;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform-origin: bottom center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>animation: rotate-arrow 5s infinite linear;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>@keyframes rotate-arrow {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>0% { transform: translate(-50%, -50%) rotate(0deg); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>100% { transform: translate(-50%, -50%) rotate(360deg); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="spin-wheel"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="slice"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;Stat 1&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="slice"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;Stat 2&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="slice"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;Stat 3&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="slice"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;Stat 4&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="slice"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;Stat 5&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="slice"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;Stat 6&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div</span></p>
+</body>
+</html>
